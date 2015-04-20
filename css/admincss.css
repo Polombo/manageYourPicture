@@ -1,0 +1,589 @@
+
+/*********************
+ADMINISTRADOR CSS
+***************************/
+body{
+    font-family: Helvetica;
+    background-color: #E1FFFD;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    color: black;
+
+}
+
+
+h1{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+h3{
+    font-family: Helvetica;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type=text]{
+    height: 20px;
+}
+
+.text {
+    width: 12em;
+}
+
+input[type=password]{
+    height: 20px;
+}
+
+body a{
+    text-decoration: none;
+}
+
+#principal_Admin{
+    position: relative;
+    display: inline-block;
+    background-color: #B6EEE3;
+    width: 100%;
+    height: auto;
+    padding: .5em .5em 3em .5em;
+    /*overflow: auto;*/
+    z-index: 0;
+
+}
+
+#adminLogin{
+
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height:100%;
+    font-style:italic;
+    color: #0CBD70;
+
+
+}
+
+#cabecera{
+    font-size: 28px;
+
+}
+
+
+#contenedor_menu{
+    display: inline-block;
+    position: relative;
+    margin-top: 2em;
+    height: auto;
+    /*background-color: blue;*/
+    width: 100%;
+    z-index: 10;
+}
+
+#opcionesAdmin{
+    position: relative;
+    font-family: HelveticaRounded LT Std Bd;
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+
+#subopcion{
+    position: relative;
+    float: left;
+    display: inline-block;
+    /*padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 18%;
+    /*background-color: gray;*/
+
+}
+
+#subopcion a {
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+}
+
+#datosform{
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    border: 2px solid;
+    width: 50%;
+    height: 50%;
+}
+
+#datosform h1 {
+    text-align: center;
+}
+
+#datosform table {
+    width:100%;
+    /*border: 2px solid;*/
+}
+
+#datosform table td{
+    padding-top: 20px;
+}
+
+.datosDiv{
+    /*background-color: white;*/
+    position: relative;
+    display: block;
+    font-family: sans-serif;
+    /*color: seagreen;*/
+    width: 100%;
+    height: auto;
+
+}
+
+/********************************
+**** CAPA DETALLES CAMISETAS ****
+*********************************/
+
+#capa_camisetas{
+    display: inline-block;
+    /*margin-left: 5em;*/
+    width: 100%;
+    /*background-color: brown;*/
+    color: white;
+    padding: 0px;
+    font-family: HelveticaRounded LT Std Bd;
+    z-index: 5;
+}
+
+#capa_detalle{
+    /*background-color: blue;*/
+    font-size: 10px;
+    display: inline-block;
+    /*position: relative;*/
+    width: 49%;
+    border: 2px solid;
+    border-color: red;
+    z-index: 1;
+}
+
+
+/*
+DETALLES DEL FORMULARIO CAMISETAS
+*/
+.tabla_detalles{
+    width: 100%;
+    background-color: lightblue;
+    border: 1px solid;
+    border-collapse: collapse;
+
+}
+
+.tabla_detalles th{
+    font-family: HelveticaRounded LT Std Bd;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid;
+    background-color: #008000;
+    padding: 5px;
+}
+
+.tabla_detalles tr:hover{
+    background-color: #808080;
+}
+
+.tabla_detalles .datos{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 12px;
+
+}
+
+
+.tabla_detalles td{
+    border: 1px solid;
+    padding: 7px 2px 7px 2px;
+}
+
+
+.tabla_detalles td.celda_detalles{
+    width: 80%;
+}
+
+.tabla_detalles td.celda_imagen{
+    text-align: center;
+    width: 4%;
+    /*height: ;*/
+}
+
+.tabla_detalles p.titulo{
+    font-size: 14px;
+    color: blue;
+    font-style: oblique;
+    text-align: center;
+}
+
+.tabla_detalles p.textodetalle{
+    display: inline-block;
+}
+
+.tabla_detalles textarea{
+    vertical-align: top;
+    background-color: #999999;
+    color: white;
+    border: none;
+    font-size: 10px;
+    width: 100%;
+    resize: none;
+}
+.tabla_detalles img{
+    width: 13px;
+    height: 20px;
+}
+
+.tabla_detalles input[type=image] {
+    width: 13px;
+    height: 20px;
+}
+
+/*+++++++++ FIN DETALLES TABLA CAMISETAS ++++++++*/
+
+#capa_actualidades{
+    /*background-color: blue;*/
+    /*position: relative;*/
+    width: 50%;
+    margin: auto;
+    border: 2px solid;
+    z-index: 1;
+}
+
+#capa_actualidades input.botongris{
+    text-align: right;
+}
+.tabla_actualidades{
+    width: 100%;
+    margin: auto;
+    background-color: lightblue;
+    border: 1px solid;
+    border-collapse: collapse;
+    vertical-align: text-bottom;
+}
+
+.tabla_actualidades td{
+    border-bottom: .1em solid;
+}
+
+.tabla_actualidades tr:hover{
+    background-color: #E1FFFD;
+}
+
+.tabla_actualidades td.txtcentrado{
+    text-align: center;
+}
+/*
+.tabla_actualidades input[type=checkbox]{
+    position: relative;
+    margin-top: -.9em;
+    
+}
+*/
+.tabla_actualidades input[type=submit]{
+    
+    margin: .2em;
+    
+}
+
+
+#datos_imagen p.camisetaTitulo{
+    padding-top: 0em;
+    font-size: 18px;
+    font-family: HelveticaRounded LT Std Bd;
+    text-align: left;
+    /*background-color: blue;*/
+    width: 8em;
+    /*display: block;*/
+}
+
+
+#datos_imagen img.logoCamiseta{
+    padding-bottom: 1em;
+    /*padding-left: 1em;*/
+    width: 10em;
+    height: 15em;
+    display: block;
+}
+
+#detalle_camiseta{
+    /*background-color: red;*/
+    display: inline-block;
+    border: 2px solid;
+    border-color: red;
+    width:65%;
+    position: relative;
+    padding-bottom: 1em;
+
+}
+
+
+#divForm{
+    position: relative;
+    display: inline-block;
+    width: 40%;    
+}
+
+#form{
+    position: relative;
+    /*display: inline-block;*/
+    width: 75%;
+    margin: auto;
+    padding: 1em;
+    /*background-color: green;*/
+    box-shadow:.2em .1em .5em .0em black;
+    -moz-box-shadow:2em .1em .5em .0em black;
+    -ms-box-shadow:2em .1em .5em .0em black;
+    -o-box-shadow:2em .1em .5em .0em black;
+    -webkit-box-shadow:2em .1em .5em .0em black;
+    border-radius: 3px;
+    -moz-border-radius: 3px ;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.noresize {
+    resize: none;
+}
+
+.form_unico{
+    padding: 0.1em;
+    border: 1px dotted black;
+    /*display: inline-block;*/
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+#comun{
+    padding: 0.1em;
+    border: 1px dotted black;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+}
+#comun>span>input[type="file"]{
+    width: 100%;
+}
+
+#comun>span>input[type="file"].filebutton{
+    width: 80%;
+    display: inline-block;
+    height: 2em;
+}
+
+input[type="button"].botongris{
+    background-color: #D0D0D0;
+    width: 5em;
+    display: inline-block;
+    height: 2em;
+}
+
+input[type="button"].botoneliminar{
+    background-color: #D0D0D0;
+    width: 2em;
+    display: inline-block;
+    height: 2em;
+}
+
+input[type="submit"].botongris{
+    background-color: #D0D0D0;
+    width: 5em;
+    display: inline-block;
+    height: 2em;
+}
+
+input[type="file"].filebutton{
+    width: 80%;
+    display: inline-block;
+    height: 2em;
+}
+
+#divimages{
+    position: relative;
+    padding: 0.1em;
+    border: 1px dotted black;
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+}
+
+#tablaImgs{
+    width: 100%;
+    text-align: center;
+}
+#tablaImgs.th{
+
+}
+#tablaImgs.td{
+
+}
+
+.img_peq{
+    width: 3em;
+}
+
+.img_Maspeq{
+    width: 1.5em;
+}
+
+#imagesAdd{
+    margin-top: .5em;
+    border: 1px solid black;
+}
+
+#imagesAdd>span>input[id="images"]{
+    width: 45%;
+}
+
+/******************* CLASE ELEMENTOS ************************/
+
+.txtbox_pequenio{
+    width: 5em;
+    font-size: 9px;
+}
+
+.txtbox_grande{
+    width: 19em;	
+    /*background-color: red;*/
+}
+
+.txtbox_mediano{
+    width: 7em;
+    /*height: 20px;*/
+}
+
+.text_center{
+    text-align: center;
+}
+
+.text_right{
+    text-align: right;
+}
+
+.big_text{
+    font-size: 15px;
+}
+
+.normal_text{
+    font-size: 12px;
+}
+
+.small_text{
+    font-size: 10px;
+}
+
+.xsmall_text{
+    font-size: 8px;
+}
+
+.aviso{
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.titulo{
+    /*font-family: "Helvetica LT Std";*/
+    font-family: Helvetica;
+    /*background-color: green;*/
+    color: black;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    vertical-align: middle;
+}
+
+.vtop{
+    vertical-align: top;
+}
+
+.tcentr{
+    text-align: center;
+}
+
+.mgnauto{
+    margin: auto;
+}
+
+
+/*******************
+MENU DESPLEGLABLE
+*******************/
+#header {
+    margin:auto;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 10;
+    width: 50%;
+}
+ul, ol {
+    list-style:none;
+}
+.nav > li {
+    float:left;
+}
+.nav li a {
+    background-color:#88A8B6;
+    color:black;
+    text-decoration:none;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding:.8em .5em;
+    display:block;
+    width: 8em;
+    white-space: nowrap;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    /*min-width:140px;*/
+}
+/*color sub*/
+.nav li ul li a{
+    background-color: black;
+    color: white;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+.nav li ul li {
+    position:relative;
+}
+.nav li ul li ul {
+    position: relative;
+    right:-8em;
+    top:-2.8em;
+}
+/*******************
+FIN MENU DESPLEGLABLE
+*******************/
+
+
+/*********************************************************/
+

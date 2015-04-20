@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-jun-2014, 13:28:19
+    Author     : pablo.olleros
+*/
+
+/*#wrapper {
+    overflow: hidden;
+}
+
+#wrapper {
+    width: 100%;
+    text-align: center;
+    background: url(../images/fndpage.jpg) no-repeat center top;
+}
+
+#logo-wifi {
+    width: 100%;
+    text-align: left;
+    background: url(../images/pda/logo-wifi-grande_2.gif) no-repeat center top;
+}*/
+
+/*body {
+    margin:0;
+    background: url(../images/fndpage.jpg) no-repeat left top;
+}*/
+
+
+body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 12px Helvetica, Sanserif;
+    color: black; 
+/*    background:  url(../images/fndpage.jpg) repeat-x left top;*/
+    background: #B8CBE7;
+
+
+}
+
+/*input {
+    padding: 0px;
+    height: 16px;
+    vertical-align: middle;
+    font-size: 8pt;
+}*/
+
+/*
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+     color: #333; 
+    background-color: #fff;
+}*/

@@ -1,0 +1,12 @@
+#cssproductos ul,
+#cssproductos li,
+#cssproductos span,
+#cssproductos a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  width: 7em;
+  background-color: red;
+}
+

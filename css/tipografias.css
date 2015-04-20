@@ -1,0 +1,155 @@
+/* 
+    Created on : 03-Apr-2014, 14:27:54
+    Author     : nano
+*/
+
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: 'actionj';
+    src: url('../tipografias/actionj.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/actionj.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/actionj.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/actionj.TTF')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/actionj.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'board_dudes';
+    src: url('../tipografias/board_dudes.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/board_dudes.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/board_dudes.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/board_dudes.TTF')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/board_dudes.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'cfanarchy';
+    src: url('../tipografias/cfanarchy.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/cfanarchy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/cfanarchy.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/cfanarchy.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/cfanarchy.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'cycling';
+    src: url('../tipografias/cycling.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/cycling.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/cycling.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/cycling.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/cycling.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'digiform';
+    src: url('../tipografias/digiform.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/digiform.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/digiform.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/digiform.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/digiform.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'dung';
+    src: url('../tipografias/dung.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/dung.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/dung.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/dung.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/dung.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'elegant';
+    src: url('../tipografias/elegantlight.eot');
+    src: url('../tipografias/elegantlight.eot?#iefix') format('embedded-opentype'),
+         url('../tipografias/elegantlight.woff') format('woff'),
+         url('../tipografias/elegantlight.ttf') format('truetype'),
+         url('../tipografias/elegantlight.svg#elegantlightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gratis';
+    src: url('../tipografias/gratis.eot');
+    src: url('../tipografias/gratis.eot?#iefix') format('embedded-opentype'),
+         url('../tipografias/gratis.woff') format('woff'),
+         url('../tipografias/gratis.ttf') format('truetype'),
+         url('../tipografias/gratis.svg#gratisregular') format('svg');
+}
+
+@font-face {
+    font-family: 'KillEmAll';
+    src: url('../tipografias/killemall.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/killemall.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/killemall.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/killemall.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/killemall.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'quentin';
+    src: url('../tipografias/quentin.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/quentin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/quentin.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/quentin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/quentin.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'skatelove2';
+    src: url('../tipografias/skatelove2.eot'); /* IE9 Compat Modes */
+    src: url('../tipografias/skatelove2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../tipografias/skatelove2.woff') format('woff'), /* Modern Browsers */
+         url('../tipografias/skatelove2.TTF')  format('truetype'), /* Safari, Android, iOS */
+         url('../tipografias/skatelove2.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+    font-family: 'steelregular_italic';
+    src: url('../tipografias/steelfish_rg_it.eot');
+    src: url('../tipografias/steelfish_rg_it.eot?#iefix') format('embedded-opentype'),
+         url('../tipografias/steelfish_rg_it.woff') format('woff'),
+         url('../tipografias/steelfish_rg_it.ttf') format('truetype'),
+         url('../tipografias/steelfish_rg_it.svg#steelfishregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'steeloutline';
+    src: url('../tipografias/steelfish_outline.eot');
+    src: url('../tipografias/steelfish_outline.eot?#iefix') format('embedded-opentype'),
+         url('../tipografias/steelfish_outline.woff') format('woff'),
+         url('../tipografias/steelfish_outline.ttf') format('truetype'),
+         url('../tipografias/steelfish_outline.svg#steelfishoutline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'steelregular';
+    src: url('../tipografias/steelfish_rg.eot');
+    src: url('../tipografias/steelfish_rg.eot?#iefix') format('embedded-opentype'),
+         url('../tipografias/steelfish_rg.woff') format('woff'),
+         url('../tipografias/steelfish_rg.ttf') format('truetype'),
+         url('../tipografias/steelfish_rg.svg#steelfishregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+

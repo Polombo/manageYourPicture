@@ -1,0 +1,1106 @@
+/*
+Designed by Telefonica I+D
+and Pablo Olleros
+*/
+
+/**************
+Menu Properties
+**************/
+
+
+
+.mov-show{
+    display:none;
+}
+#menu ul {
+    margin: 0 0 0 0;
+    border-radius: 0;
+    text-align: right;   
+    border-top: 2px solid white;
+
+}
+
+
+/*body, p, th, td, input, select {
+    font-size: 12px; 
+    font-family:  Helvetica, Sanserif; 
+    color: black;
+}*/
+
+a {
+    color: #0040A2;
+    text-decoration: none;
+}
+
+/*a:hover {
+    color: #0040A2;
+    text-decoration: none;
+}*/
+
+ul {
+    margin-top: 0;
+    /*margin-left:2em;*/
+    padding:0;
+    text-align: center;
+    list-style:none; 
+}
+
+li {
+    text-align: left;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #B8CBE7;
+    margin:0;
+    margin-left: .5em;
+    margin-right: .5em;
+    border-width:5px; 
+    color:#B8CBE7;
+}
+
+.parrilla { 
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+    padding: 1em;
+    float: left;
+    margin-top: -15px;
+}
+
+.parrilla b{
+    font-weight: 900;
+}
+
+.parrilla a{    
+    color: #3399FF;
+    font-weight: bold;
+    /*font-size: 12px*/
+}
+
+/********
+PRESENTACION
+********/
+
+.img-presentacion{
+    float: right;
+}
+
+#presentacion li.parrilla{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+}
+.text-presentacion{    
+    width:100%;
+    height: 100%;
+    text-align: justify;
+    line-height: 2em;
+    padding: 2em;
+    border-right: 2px Solid #B8CBE7;
+}
+
+.text-presentacion b {
+    font-size: 13px;
+}
+
+.text-presentacion strong {
+    font-size: 36px;
+    color: #FBC729;
+    text-align: left;
+    font-family: Helvetica;
+}
+
+/********
+INVESTIGACION
+********/
+
+.img-investigacion{
+    float: right;
+}
+
+.img-investigacion2{
+    padding: .5em;
+}
+
+#investigacion li.parrilla{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+}
+.text-investigacion{    
+    width:100%;
+    height: 100%;
+    text-align: justify;
+    line-height: 2em;
+    padding: 2em;
+    border-right: 2px Solid #B8CBE7;
+}
+
+.text-investigacion b {
+    font-size: 13px;
+}
+
+.text-investigacion strong {
+    font-size: 36px;
+    color: #FBC729;
+    text-align: left;
+    font-family: Arial;
+}
+/********
+BECAS
+********/
+.img-becas{
+    float: right;
+    padding: .5em;
+}
+
+
+
+
+
+.parrilla-vertical{
+    /*border-left: 2px Solid #B8CBE7;*/
+    margin-top: .5em;
+}
+
+.actualidad{
+    float: left;
+    position: relative;
+    width: 100%;
+    /*border-right: 1px solid #5582C6;*/
+}
+
+.titulo-parrilla-actualidad{    
+    padding-left: 1em;
+    background: #016196;
+}
+
+.foto-parrilla-actualidad{
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.texto-parrilla-actualidad{
+    padding: 0.3em;
+}
+
+.proyecto{
+    float: left;
+    position: relative;
+    width: 100%;
+    /*border-right: 1px solid #5582C6;*/
+    /*    border-left: 2px solid #B8CbE7;*/
+}
+
+.titulo-parrilla-proyecto{    
+    padding-left: 1em;
+    background: #016196;
+}
+
+.foto-parrilla-proyecto{
+    max-width: 94px;
+    max-height: 94px;
+    float: right;
+    padding: .3em;
+}
+
+.texto-parrilla-proyecto{
+    padding: 0.3em;    
+}
+
+.parrilla-horizontal .texto-parrilla-proyecto{
+    border-left: 3px solid #B8CbE7;    
+}
+
+.texto-parrilla-proyecto #h1{  
+    font-size: 18px;
+    padding:.3em;
+}
+
+.agenda{
+    float: left;
+    position: relative;
+    width: 100%;
+    /*border-right: 1px solid #5582C6;*/
+}
+
+.agenda p{
+    /*border-left: 8px solid #FFC715;*/
+    /*    padding: .3em;
+        margin: 5px;*/
+}
+
+.titulo-parrilla-agenda{    
+    padding-left: 1em;
+    background: #016196;
+}
+
+.foto-parrilla-agenda{
+    float: right;
+    padding: .5em;
+}
+
+.texto-parrilla-agenda{
+    padding: 0.3em;    
+}
+
+.parrilla-horizontal .texto-parrilla-agenda{    
+    border-left: 3px solid #B8CbE7;
+}
+
+.tabla-agenda{
+    margin: .5em;
+}
+
+.agenda ul{    
+    text-align: justify;
+    display: inline-block;
+    padding: .5em;  
+    list-style-image: url('../images/sunny_sm.jpg');
+    margin-left: .5em;
+}
+
+.agenda a p{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.colabora{
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.titulo-parrilla-colabora{    
+    padding-left: 1em;
+    background: #016196;
+}
+
+.foto-parrilla-colabora{
+    float: right;
+    padding: .3em;
+    max-width: 94px;
+    max-height: 94px;
+}
+
+.texto-parrilla-colabora{
+    padding: 0.3em;    
+}
+
+.parrilla-horizontal .texto-parrilla-colabora{
+    border-left: 3px solid #B8CbE7;
+}
+
+.tabla-colabora{
+    margin-left: .5em;
+}
+
+.tabla-presentacion{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;   
+    font-size: 80%;
+}
+
+.tabla-docs-presentacion{
+    padding:1em;
+}
+
+#menu li {    
+    display: inline-block;  
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;  
+}
+
+/*********
+FONT@FACES
+*********/
+
+/*@font-face{
+    font-family:MovistarHeadline-Bold;
+    src:url('../css/fonts/MovistarHeadline-Bold.ttf');
+    src:local('?'),
+        url(../css/fonts/MovistarHeadline-Bold.ttf) format("Truetype");
+    font-weight: normal;
+    font-size:normal;
+}
+
+@font-face{
+    font-family:MovistarHeadline-Regular;
+    src:url('../css/fonts/MovistarHeadline-Regular.ttf');
+    src:local('?'),
+        url(../css/fonts/MovistarHeadline-Regular.ttf) format("Truetype");
+    font-weight: normal;
+    font-size:normal;
+}*/
+
+
+/************
+MEDIA QUERIES
+************/
+@media only screen and (max-width: 1000px) {   
+    .centrico {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 100%;
+    }
+    #menu ul {
+        margin: 0 0 0 0;
+        border-radius: 0;
+        text-align: center;
+        //border-top: 0;
+    }
+
+    .agenda {
+        float: none;
+        position: relative;
+        border-right: 1px solid #5582C6;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {   
+    .parrilla {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 100%;
+    }
+
+    .mov-show{
+        display: block;
+    } 
+
+    .foto-parrilla-agenda {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 730px) {   
+    .inline, ul li {
+        display: list-item;
+    }
+    .mov-hidden{
+        display:none;
+    }
+
+    .mov-show{
+        display: block;
+    }    
+
+    #menu li {
+
+        display: block;  
+        font-size: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+}
+
+@media only screen and (max-width: 360px) {   
+    .logo{
+        width: 290px;
+    }
+}
+
+.colabora ul{    
+    text-align: justify;
+    padding: .5em;
+    list-style-image: url('../images/sunny2_sm.jpg');
+    margin-left: .5em;
+}
+
+.colabora p{    
+    /*border-left: 8px solid #FFC715;*/
+    padding: .3em;
+    /*font-size: 13px;*/
+    /*font-weight: bold;*/
+    /*padding: 0;*/    
+}
+
+.colabora p a{
+    font-size: 12px;
+    font-weight: bold;
+    color:#3399FF;
+
+}
+
+.texto-parrilla-colabora #h1{  
+    font-size: 16px;
+    font-weight: bold;
+    padding:.3em;
+}
+
+
+
+.actualidad #foto{
+    /*    margin-left: 4em;
+        margin-top: .5em;
+        margin-bottom: .5em;*/
+
+}
+
+.proyecto #foto{
+    /*    margin-left: 4em;
+        margin-top: .5em;
+        margin-bottom: .5em;*/
+    max-width: 100%;
+}
+
+.colabora #foto{
+    max-width: 100%;
+}
+
+.titulo { 
+    font-family: Helvetica, sans-serif;
+    color: #FBC729;
+    /*    font-size: 30px; */
+    font-weight: bolder;
+    margin-left: 1em;
+}
+
+.titulo2 { 
+    color: #FFFFFF; 
+    text-align: right; 
+    font-size: 12pt; 
+    font-weight: bolder;
+}
+
+
+/* formularios */
+
+form {
+    margin: 1px;
+    padding: 2px;
+
+}
+
+input {
+    padding: 0px;
+    height: 16px;
+    vertical-align: middle;
+    font-size: 8pt;     
+}
+
+select {
+    height: 19px;
+    vertical-align: middle;
+    font-size: 8pt;     
+}
+
+
+/*MIO PABLO OLLEROS*/
+
+#user_number, #user_password {
+
+    padding: 1px;
+    background-color: #f0f0f0;
+}
+
+td, input {
+    vertical-align: middle;
+    font-size: 8pt;
+    font-family: Helvetica;
+}
+
+legend {    
+    font-family: Arial;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #000;
+    border: 0;
+    margin: .5em;
+
+}
+
+/*#acceso_fijo {    
+    padding: 1.6em 2em 0;
+}
+#acceso_fijo label input, #acceso_movil label input, #acceso_fijo label select {
+    display: block;
+    width: 17.047em;
+    margin-top: 2px;
+    background-color: #f0f0f0;
+    font-family: Arial;
+    font-size: 1.083em;
+    color: #515559;
+}
+
+
+.caja_config {
+    padding: 10px;
+    color: #3B393E;
+}*/
+
+.footer {
+    clear: both;
+    background: #00517A;
+}
+
+.contentLstFooter {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding-top: .3em;
+    background: #f6f7f8 url(/estaticos/img/fndopcionesup.gif) repeat-x left top;
+}
+.intcontentLstFooter {
+    position: relative;
+    display: inline;
+    float: left;
+    width: 100%;
+    padding-bottom: .4em;
+    /*     background: #f6f7f8 url(/estaticos/img/fndopcionesdown.gif) repeat-x left bottom;*/
+    margin-bottom: .8em;
+}
+
+.intopcionesfooterdown {
+    clear: both;
+    display: inline;
+    float: left;
+    width: 100%;
+    height: 4.7em;
+    background: #00517a;
+}
+
+
+
+.infofooter ul li a {
+    color: #5cd2ed;
+}
+
+.infofooter {
+    /*    float: left;*/
+}
+
+.infofooter ul {
+    float: left;
+    padding: 1em 0;
+    margin-bottom: 0;
+    /*    padding-bottom: .8em;
+        padding-left: 2em;*/
+}
+
+
+ul.topmenu li {
+    float: left;
+    margin-top: .65em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.infofooter ul li {
+    float: left;
+    padding-right: .5em;
+    margin-right: .5em;
+    border-right: 1px solid #6c6d6d;
+    font-size: .9em;
+    letter-spacing: 0;
+    color: #5cd2ed;
+}
+.intopcionesfooterdown {
+    clear: both;
+    display: inline;
+    float: left;
+    width: 100%;
+    /*    height: 4.7em;*/
+    background: #00517a;
+    /*    margin-left: -30px;    */
+}
+
+/*fmpj*/
+.logo-home-fmpj{
+    /*    padding: 1em;*/
+}
+
+.logo-movistar{    
+    /*    padding-right: 1em;*/
+}
+
+.logofooter{
+    float: right;
+}
+.logofooter {
+    display: inline;
+    float: right;
+    margin-top: .5em;
+    /*    margin-right: 2.2em;*/
+}
+
+.logo-android {
+    padding: 2em;
+}
+
+.logo-ios-android {
+    padding: 1em;
+    text-align: center;
+}
+
+.logo-windows-phone{
+    display: inline;
+    float: left;
+    padding: 0em 1em 1em 1em;
+    margin-left: 4em;
+    margin-top: 1em;
+}
+
+#windows-icon{
+
+    padding: 1em 0em 0em 1em;
+    margin-right: 0em;
+}
+
+.container{
+    max-width: 967px;
+    //width: 600%;
+}
+
+/*fmpj*/
+.headerlogo {
+    clear: both;
+    /*    float: left;*/
+    width: 100%;
+    height: 75px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background: #3483CA;
+    /*border-radius: 5px;*/
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /*    margin-top: 1em;
+        margin-bottom: 1em;*/
+    /*    height: 8em;*/
+}
+
+.logomov {
+    float: right;
+    /*    margin-right: 2em;
+        margin: -1em;*/
+    background: url(../images/H2_logo_telefonica.jpg) no-repeat scroll left top transparent !important;
+    background-position: right top;
+}
+
+#enlacelogo {
+    display: block;
+    height: 7.5em;
+    width: 22.2em;       
+    background-image: none !important;
+}
+
+.cabecera_producto .headercabecera {
+    min-height: 3em;
+    height: auto !important;
+    /*    padding: 1.2em 0 0 2em;*/
+    padding-left: 1.5em;
+    /* overflow: hidden; */
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.notyetregister{
+    padding: 1em 0em 1em 1em;
+    font-size: 14px;
+
+}
+
+.btnContenedor {
+    background: url('../images/f_btncontenedor.png') no-repeat scroll left top transparent;
+    text-align: center;
+    overflow: visible;
+    padding-left: 5px;
+    float: right;
+    /*    padding: 0px;*/
+    width: auto;
+    margin: -0.1em 1em .2em .2em;
+}
+
+.btnContenedor-ftr {
+    float: right !important;
+}
+
+.btnContenedor-left {
+    float: left !important;
+}
+
+.btnAgrup {
+    background: url('../images/f_btnagrup.png') no-repeat scroll right top transparent;
+    padding: 4px;
+    float: right !important;
+}
+
+html body .btnContenedor .btnAgrup .btnText, html body #wrapper #intwrapper .btnContenedor .btnAgrup .btnText {
+    overflow: visible;
+    width: auto;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    padding: .30em 1em .65em 1em;
+    padding-top: .6em\9;
+    padding-bottom: .75em\9;
+}
+
+.titulo_clave, h2 {
+    font-size: 1.6em;  
+    font-family: MovistarHeadline-Bold,  Helvetica, sans-serif;
+    color: #00517a;
+    margin-top: 0px;
+    margin-bottom: 0px;    
+    text-align: center;
+}
+
+.titulo_clave2 p {
+    font-size: 1.2em;
+    text-align: justify;
+    font-family:  Helvetica, sans-serif;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0 20px 0 10px;
+    margin-left: 1em;
+}
+
+.formbox {
+    background: url("../images/bg_formbox_top.png") no-repeat left top transparent;
+    width: 344px;
+    display: block;
+    float: left;
+    margin: 26px 0 40px 40px;
+}
+
+.formbox .center {
+    padding: 19px 19px 8px 19px;
+    width: 306px;
+    float: left;
+    display: block;
+}
+
+.formbox .center h2 {
+    color: #005179;
+    font-size: 20px;
+    font-family: MovistarHeadline-Bold, Helvetica, sans-serif;
+}
+
+.center h3 {
+    margin:0;
+    font-family: MovistarHeadline-Bold, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.center p, h2{
+    margin-left: 1em;
+}
+
+.caja_config p{    
+    margin: 1em 1em 1em 1em;
+}
+
+.boton_volver{
+    height: 35px;
+    margin: 1em 0 0 1em;
+}
+
+/*fmpj*/
+.row-fluid, #footer{
+    background: #5582C6;;
+    width: 100%;
+
+}
+
+#menu{
+    background: #3483CA;
+    text-align: right;
+
+}
+
+.cont990 {
+    width: 100%;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.b-i {
+    padding: 0 0;
+}
+
+
+
+#dropdown ul {
+    text-align: left;
+}
+
+.inline ul{
+    background:  #FFC600;
+    border: 0;
+
+}
+
+.inline a {
+    font-color:black;
+}
+
+.dropdown-menu ul{
+    background:  #FFC600;
+}
+
+#dropdown li a {     
+    color: black;
+
+}
+
+
+
+#menu #menu-big li{
+    padding: 0;
+    width: 100%;
+
+}
+
+#menu-big ul {
+    background: url('../images/fondo_menu_yellow.jpg'); 
+}
+
+#menu a {
+    color: white;
+    font-family: Helvetica;
+    /*    color: white;*/
+    font-family: Helvetica;   
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.active {     
+    background: #FFC600;
+    /*border-radius: 10px;*/
+}
+
+#menu li:hover{
+    /*color: pink;*/
+    background:  #FFC600;
+}
+
+/*#menu li a:hover,
+#menu li a:focus {
+    color: white;
+    background:  #0087b2;
+}*/
+
+.lema p{
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    color: #5582C6;
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+.gray{
+    /*background: #EFEFEF;*/
+
+    width:100%;
+    height: 100%;
+    /*    border-radius: 10px;
+        -webkit-border-radius: 10px;*/
+
+    text-align: justify;
+    line-height: 2em;
+    /*    box-shadow: 2px 2px 2px #888888;*/
+}
+
+.text-index{    
+    width:100%;
+    height: 100%;
+    /*    text-align: justify;*/
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+.text-index p {    
+    padding: 5px;
+    margin: 0;
+}
+
+
+.gray p {    
+    /*    padding:1em;
+        margin: 0;
+        font-size: 14px;
+        word-spacing: 2px;*/
+    font-size: 12px;
+    color: #006;
+    text-align: left;
+    font-family: Verdana, Geneva, sans-serif;
+
+
+}
+
+.gray img{    
+    padding:1em;
+    width: 100%;
+}
+
+#config .gray{
+    padding: 1em;
+}
+
+#home li.movistar_wifi, #mapa li.menu_map, #config li.menu_business, 
+#support li.menu_support  {
+    background:  #0087b2;      
+}
+
+#info-config li.config{
+    background:  #0087b2;  
+}
+
+/*#mapa li.menu_mapa {
+    background:  #0087b2;
+}*/
+
+.form-group input{
+    width: auto;
+    float: right;
+}
+
+.infobox{    
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.infobutton{
+    padding-bottom: 3.5em;
+}
+
+.span1.centrico-box .gray{    
+    padding:.2em;
+}
+.span2.centrico-box .gray{    
+    padding:.2em;
+}
+
+.image-css{    
+    padding:.5em;
+}
+.instructions{
+    background: #EFEFEF;
+    border-radius: 10px;
+    padding: 1em;
+    border: 1px solid #aaa;
+    /*box-shadow: 2px 2px 2px #888888;*/
+}
+
+#info-config .instructions p{
+    text-align: justify;
+}
+
+#info-config .instructions a{
+    font-size: 1.2em;
+    font-family: Helvetica,Sanserif;
+}
+
+#info-config .instructions li  {
+    text-align: center;
+    /*    padding: 1em; */
+}    
+
+#info-config .instructions img  {
+    margin: auto;
+    padding: .5em;
+}
+
+.always-centrico {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+.image_home {
+    clear: both;
+    /*float: left;*/
+    width: 99%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: url(../images/wifi_mobiles.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-top: 1em;
+    height: 8em;
+}
+
+#google-map {
+    width: 100%;
+    padding:1em;
+}
+
+#map_canvas { height: 100% }
+
+
+.tabs_content-pf .basic-pf a {
+    /*background: url("../images/fondo_acordeon.jpg") repeat-x scroll 0 0 transparent;*/
+    /*border-bottom: 5px solid #FFFFFF;*/
+    display: block;
+    /*height: 33px;*/
+    /*margin-top: 0;*/
+    text-align: left;
+    /*width: 684px;*/
+    padding-left: 10px;
+
+    font-weight: normal !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    /*font-family: Arial !important;*/
+}
+
+.margen_contenido_c {
+    /*padding-left: 40px;*/
+    line-height: 18px;
+    /*margin-bottom: 15px;*/
+    color: #535659 !important;
+    font-family: arial !important;
+
+    margin-top: 10px;
+}
+
+.margen_contenido_c p{
+    background: #f7f4f4;
+    padding:0.5em;
+    font-size: 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.tabs_content-pf .basic-pf {
+    padding: 1em 1em 1em 1em;
+    margin: 1px;
+    /*width: 672px;*/
+}
+
+.com-wifi{
+    width: 55px;
+    height: 50px;
+}
