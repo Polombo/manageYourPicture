@@ -1,79 +1,82 @@
 <?php
+
 class Admin extends MX_Controller {
 
-    function index(){
-        
-        
-        if($this->session->userdata('admin')){
+    function index() {
+
+
+        if ($this->session->userdata('admin')) {
             //echo "ADMIN SESEION";
-            $data ="";
+            $data = "";
             $this->load->module('template');
             $this->template->admin($data);
-        }else{
+        } else {
             //echo "ADMIN NO SESEION";
             $this->load->view('login');
         }
     }
-    
-    function submitLogin(){
-        
+
+    function submitLogin() {
+
         //echo "Form login submitted";
-        
+
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('admin', 'Admin', 'required|max_length[50]|xss_clean');
-        //$this->form_validation->set_rules('pass', 'Password', 'required|max_length[100]|xss_clean|callback_pword_check');
+        $this->form_validation->set_rules('pass', 'Password', 'required|max_length[100]|xss_clean|callback_pword_check');
 
-        if ($this->form_validation->run() == FALSE)
-        {
+        if ($this->form_validation->run() == FALSE) {
             //echo "VALIDACION MALA";
             //si el formulario falla...se carga el modulo de nuevo
             $this->load->view('login');
             //redirect("admin");
-        }
-        else{
+        } else {
             //echo "VALIDACION BUENA";
             $username = $this->input->post('admin', TRUE);
+            $pass = $this->input->post('pass', TRUE);
+
+            $pass = md5($pass);
+            //echo "$username md5($pass)";
+
             $this->_in_you_go($username);
         }
     }
-    
-    /******* FUNCION QUE VIENE DEL CALLBACK DE LAS REGLAS DEL FORM **************/
-    function pword_check($pass){
+
+    /*     * ***** FUNCION QUE VIENE DEL CALLBACK DE LAS REGLAS DEL FORM ************* */
+
+    function pword_check($pass) {
+
+        echo "PASS CHECK";
+        exit;
         $username = $this->input->post('admin', TRUE);
-        
+
         $pass = Modules::run('site_security/make_hash', $pass);
-        
+
         $this->load->model('mdl_admin');
         $result = $this->mdl_admin->pword_check($username, $pass);
-        
-        if ($result == FALSE){
+
+        if ($result == FALSE) {
             $this->form_validation->set_message('pword_check', 'Usuario y/o password incorrectos');
             return FALSE;
-        }
-        else
-        {
+        } else {
             return TRUE;
         }
     }
-    
-    function _in_you_go($username){
+
+    function _in_you_go($username) {
         //give them a session and send them to the admin panel
         //echo "VALIDACION USER";
         $query = $this->get_where_custom('nombre_admin', $username);
-        foreach($query->result() as $row){
+        foreach ($query->result() as $row) {
             $user_id = $row->id_administrador;
         }
-        $this->session->set_userdata('admin',$user_id);
-        
-        $data = "";
-        echo Modules::run('template/admin',$data);
-        
-        
-    }
-    
+        $this->session->set_userdata('admin', $user_id);
 
-    function get($order_by){
+        $data = "";
+        echo Modules::run('template/admin', $data);
+    }
+
+    function get($order_by) {
         $this->load->model('mdl_admin');
         $query = $this->mdl_admin->get($order_by);
         return $query;
@@ -85,7 +88,7 @@ class Admin extends MX_Controller {
         return $query;
     }
 
-    function get_where($id){
+    function get_where($id) {
         $this->load->model('mdl_admin');
         $query = $this->mdl_admin->get_where($id);
         return $query;
@@ -97,17 +100,17 @@ class Admin extends MX_Controller {
         return $query;
     }
 
-    function _insert($data){
+    function _insert($data) {
         $this->load->model('mdl_admin');
         $this->mdl_admin->_insert($data);
     }
 
-    function _update($id, $data){
+    function _update($id, $data) {
         $this->load->model('mdl_admin');
         $this->mdl_admin->_update($id, $data);
     }
 
-    function _delete($id){
+    function _delete($id) {
         $this->load->model('mdl_admin');
         $this->mdl_admin->_delete($id);
     }
@@ -129,5 +132,5 @@ class Admin extends MX_Controller {
         $query = $this->mdl_admin->_custom_query($mysql_query);
         return $query;
     }
-    
+
 }
