@@ -1,6 +1,6 @@
 <div id="contenedor_menu">
 
-    <h2>ELIJA UNA OPCION:</h2>
+    <h2>Choose and Option:</h2>
 
     <br>
     <div id="header">

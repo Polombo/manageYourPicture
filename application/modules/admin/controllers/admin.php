@@ -1,18 +1,6 @@
 <?php
 class Admin extends MX_Controller {
 
-    /*function __construct() {
-        parent::__construct();
-        
-        if($this->session->userdata('admin')){
-            $data ="";
-            $this->load->module('template');
-            $this->template->admin($data);
-        }else{
-            $this->load->view('login');
-        }
-    }*/
-    
     function index(){
         
         
