@@ -1,0 +1,7 @@
+Instructions To Access de Admin Panel:
+
+ http://localhost/manage_your_picture/admin/
+
+  User: admin 
+  Pass: admin
+
