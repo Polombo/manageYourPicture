@@ -1,3 +1,30 @@
+<?php
+
+require './src/Instagram.php';
+use MetzWeb\Instagram\Instagram;
+
+session_start();
+
+if (isset($_SESSION['access_token'])) {
+  // user authentication -> redirect to media
+  header('Location: success.php');
+}
+
+// initialize class
+$instagram = new Instagram(array(
+  'apiKey'      => 'YOUR_APP_KEY',
+  'apiSecret'   => 'YOUR_APP_SECRET',
+  'apiCallback' => 'YOUR_APP_CALLBACK'
+));
+
+// create login URL
+$loginUrl = $instagram->getLoginUrl(array(
+  'basic',
+  'likes',
+  'relationships'
+));
+
+?>
 
 <body>
     <div class="row">
@@ -15,6 +42,15 @@
                 </div> 
                 <div id="name" class="hide"></div>     
                 <div id="email" class="hide"></div>  
+            </div>
+            <div>
+                <ul class="grid">
+                    <li><img src="assets/instagram-big.png" alt="Instagram logo"></li>
+                    <li>
+                        <a class="login" href="<?php echo $loginUrl ?>">» Login with Instagram</a>
+                        <h4>Use your Instagram account to login.</h4>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
