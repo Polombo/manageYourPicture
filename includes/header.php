@@ -11,8 +11,7 @@
                  * Activado cuando el usuario acepta el inicio de sesión, cancela o cierra el
                  * cuadro de diálogo de autorización.
                  */
-                var code = <?php echo $_GET['code']; ?>
-                alert("COde is: " + $code)
+
                 var email = '';
                 function loginFinishedCallback(authResult) {
                     if (authResult) {
