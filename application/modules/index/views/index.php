@@ -7,14 +7,14 @@ session_start();
 
 if (isset($_SESSION['access_token'])) {
   // user authentication -> redirect to media
-  header('Location: success.php');
+  //header('Location: index.php');
 }
 
 // initialize class
 $instagram = new Instagram(array(
   'apiKey'      => '347cba88348f415b8338f90b1cc289b6',
   'apiSecret'   => 'a11565cb51a6435a85ea967fe6725e0f',
-  'apiCallback' => 'http://localhost/manageYourPicture/'
+  'apiCallback' => 'http://localhost/manageYourPicture/users/manageInsta/'
 ));
 
 // create login URL
@@ -23,6 +23,7 @@ $loginUrl = $instagram->getLoginUrl(array(
   'likes',
   'relationships'
 ));
+
 
 ?>
 
