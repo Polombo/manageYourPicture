@@ -12,9 +12,9 @@ if (isset($_SESSION['access_token'])) {
 
 // initialize class
 $instagram = new Instagram(array(
-  'apiKey'      => 'YOUR_APP_KEY',
-  'apiSecret'   => 'YOUR_APP_SECRET',
-  'apiCallback' => 'YOUR_APP_CALLBACK'
+  'apiKey'      => '347cba88348f415b8338f90b1cc289b6',
+  'apiSecret'   => 'a11565cb51a6435a85ea967fe6725e0f',
+  'apiCallback' => 'http://localhost/manageYourPicture/'
 ));
 
 // create login URL
@@ -45,10 +45,10 @@ $loginUrl = $instagram->getLoginUrl(array(
             </div>
             <div>
                 <ul class="grid">
-                    <li><img src="assets/instagram-big.png" alt="Instagram logo"></li>
+                    <!--<li><img src="assets/instagram-big.png" alt="Instagram logo"></li>-->
                     <li>
                         <a class="login" href="<?php echo $loginUrl ?>">» Login with Instagram</a>
-                        <h4>Use your Instagram account to login.</h4>
+                        <!--<h4>Use your Instagram account to login.</h4>-->
                     </li>
                 </ul>
             </div>
