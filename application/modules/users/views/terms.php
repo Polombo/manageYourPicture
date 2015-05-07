@@ -13,20 +13,19 @@ and open the template in the editor.
             <?php
             $name = str_replace('%20', ' ', $this->uri->segment(3));
             $email = $this->uri->segment(4);
-//            $lastInsertedId = $this->db->insert_id();
-
-//            $this->load->model('mdl_users');
-//
-//            if ($lastInsertedId == 0) {
-//                $lastInsertedId = $this->mdl_users->getUserId($email);
-//            }
-//
-//            echo " LAst ID: $lastInsertedId";
-            //echo base_url();
-            echo validation_errors("<p style='color:blue;'>", "</p>");
-            
+            echo validation_errors("<p style='color:blue;'>", "</p>");            
             $attributes = array('name' => 'terms', 'id' => 'terms');
-            echo form_open(base_url() . 'users/submitTerms/' . $name. '/'.$email.'/', $attributes);
+            
+            $code = $_GET['code'];
+            $nameInsta = $nameInsta;
+            
+            if ($code == ""){
+                //echo "normal";
+                echo form_open(base_url() . 'users/submitTerms/' . $name. '/'.$email.'/', $attributes);                
+            }else{
+                //echo "code $code";
+                echo form_open(base_url() . 'users/submitTerms/' . $nameInsta. '/', $attributes);
+            }          
 
             $dataterms = array(
                 'name' => 'agree',

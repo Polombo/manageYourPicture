@@ -1,5 +1,8 @@
 <?php
 
+// Turn off all error reporting
+error_reporting(0);
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
@@ -45,14 +48,32 @@ class Mdl_users extends CI_Model {
             return FALSE;
         }
     }
+    
+    function checkUserTermsInsta($name) {
+
+        $table = $this->get_table();
+        $this->db->where('terms', 'yes');
+        $this->db->where('name', $name);
+        $query = $this->db->get($table);
+        $num_rows = $query->num_rows();
+
+//        echo $this->db->last_query();
+//        echo "num: $num_rows";
+
+        if ($num_rows > 0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }    
 
     function insertUser($name, $email) {
 
         $sql_user = "INSERT INTO users (name, email, sign_in_date ) VALUES ('$name', '$email', NOW())";
-        echo $sql_user;
+        //echo $sql_user;
 
         $query = $this->_custom_query($sql_user);
-        echo $this->db->last_query();
+        //echo $this->db->last_query();
         //exit;        
         if (!$query) {
             throw new Exception("Error inserting the user");
@@ -74,6 +95,20 @@ class Mdl_users extends CI_Model {
             return TRUE;
         }
     }
+    
+    function setUserTermsInsta($name) {
+
+        $sql_set = "UPDATE users SET terms = 'yes' WHERE name = '$name'";       
+
+        $query = $this->_custom_query($sql_set);
+        //echo $this->db->last_query();
+        //exit;        
+        if (!$query) {
+            throw new Exception("Error updating the user");
+        } else {
+            return TRUE;
+        }
+    }    
 
     function getUserId($email) {
 
@@ -112,6 +147,25 @@ class Mdl_users extends CI_Model {
             return $data['url_image'];
         }
     }    
+    
+    function getUrlImageInsta($name) {
+
+        $sql_getUrl = "SELECT url_image FROM users WHERE name = '$name'";
+        $query = $this->db->query($sql_getUrl);
+        $data = [];
+
+        foreach ($query->result() as $row) {
+            $data['url_image'] = $row->url_image;
+        }
+
+        //echo $this->db->last_query();
+        //exit;        
+        if (!$query) {
+            throw new Exception("Error DB");
+        } else {
+            return $data['url_image'];
+        }
+    }     
 
     function get($order_by) {
         $table = $this->get_table();

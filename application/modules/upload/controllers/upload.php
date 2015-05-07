@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 class Upload extends MX_Controller {
 
     function __construct() {
@@ -78,8 +80,8 @@ class Upload extends MX_Controller {
 //    }
 
     function do_upload($nombre, $email) {
-        echo $nombre;
-        echo $email;
+//        echo $nombre;
+//        echo $email;
 
         $nombre_cadena = clean($nombre);
         $nombre_directorio = $this->uri->segment(1);
